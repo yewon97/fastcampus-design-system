@@ -1,20 +1,34 @@
 import esbuild from "esbuild";
+import pkg from "./package.json" with { type: "json" };
+
+const dev = process.argv.includes("--dev");
+const minify = !dev;
+
+const watch = process.argv.includes("--watch");
+
+const external = Object.keys({
+  ...pkg.dependencies,
+  ...pkg.peerDependencies,
+});
+
+const baseConfig = {
+  entryPoints: ["src/index.ts"],
+  bundle: true,
+  minify,
+  sourcemap: true,
+  outdir: "dist",
+  target: "es2019",
+  watch,
+  external,
+};
 
 Promise.all([
   esbuild.build({
-    entryPoints: ["src/index.js"],
-    bundle: true,
-    minify: true,
-    sourcemap: true,
-    outdir: "dist",
+    ...baseConfig,
     format: "esm",
   }),
   esbuild.build({
-    entryPoints: ["src/index.js"],
-    bundle: true,
-    minify: true,
-    sourcemap: true,
-    outdir: "dist",
+    ...baseConfig,
     format: "cjs",
     outExtension: {
       ".js": ".cjs",
@@ -24,3 +38,4 @@ Promise.all([
   console.log("Build failed");
   process.exit(1);
 });
+
