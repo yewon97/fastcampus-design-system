@@ -1,3 +1,1 @@
 # FastCampus Design System
-
-test
