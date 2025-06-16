@@ -1,8 +1,10 @@
 {
   "name": "@fastcampus/themes",
   "version": "0.0.1",
+  "type": "module",
   "scripts": {
-    "build": "esbuild src/index.js --minify --format=cjs --bundle --outfile=dist/index.js"
+    "build": "npm run build:js",
+    "build:js": "node build.js"
   },
   "devDependencies": {
     "esbuild": "^0.16.7"

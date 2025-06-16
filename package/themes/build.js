@@ -4,6 +4,20 @@ esbuild.build({
   entryPoints: ["src/index.js"],
   bundle: true,
   minify: true,
+  sourcemap: true,
+  outdir: "dist",
+  format: "esm",
+});
+
+// commonjs es build
+esbuild.build({
+  entryPoints: ["src/index.js"],
+  bundle: true,
+  minify: true,
+  sourcemap: true,
+  outdir: "dist",
   format: "cjs",
-  outfile: "dist/index.js",
+  outExtension: {
+    ".js": ".cjs",
+  },
 });
