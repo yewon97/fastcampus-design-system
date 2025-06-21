@@ -11,38 +11,139 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": ".yarn/sdks/typescript/lib/tsserverlibrary.js",
+        "hash": "1451277444867543573"
+      },
+      {
+        "file": ".yarn/sdks/prettier/index.cjs",
+        "hash": "3393616046143878484"
+      },
+      {
+        "file": ".yarn/sdks/eslint/package.json",
+        "hash": "979153938861060082"
+      },
+      {
+        "file": ".yarn/sdks/typescript/lib/tsserver.js",
+        "hash": "1301760797202983736"
+      },
+      {
+        "file": "nx.json",
+        "hash": "840019878649592109"
+      },
+      {
+        "file": "tsconfig.eslint.json",
+        "hash": "1169291880152018748"
+      },
+      {
+        "file": ".yarn/sdks/typescript/bin/tsc",
+        "hash": "13885846455737793067"
+      },
+      {
+        "file": ".vscode/settings.json",
+        "hash": "5192163659098944044"
+      },
+      {
         "file": "README.md",
         "hash": "5356138573518251580"
+      },
+      {
+        "file": ".eslintrc.js",
+        "hash": "7307395377797753530"
       },
       {
         "file": ".gitignore",
         "hash": "17707248708148241590"
       },
       {
-        "file": "package.json",
-        "hash": "16634869210015229760"
+        "file": ".yarn/sdks/typescript/lib/tsc.js",
+        "hash": "2839614163630542371"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "15322884351288772532"
+      },
+      {
+        "file": ".yarn/sdks/eslint/bin/eslint.js",
+        "hash": "14872269478262836979"
+      },
+      {
+        "file": ".yarn/sdks/prettier/package.json",
+        "hash": "11105227518882012042"
+      },
+      {
+        "file": ".yarn/sdks/typescript/package.json",
+        "hash": "15630645831682081505"
       },
       {
         "file": "yarn.lock",
-        "hash": "8808238847657772674"
+        "hash": "6087499306845486781"
       },
       {
-        "file": "nx.json",
-        "hash": "840019878649592109"
+        "file": ".vscode/extensions.json",
+        "hash": "10535867006991962306"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "2052412003981761678"
+      },
+      {
+        "file": ".yarn/sdks/eslint/lib/unsupported-api.js",
+        "hash": "10989494384090494064"
+      },
+      {
+        "file": "package.json",
+        "hash": "16697782842660369530"
+      },
+      {
+        "file": ".yarn/sdks/prettier/bin/prettier.cjs",
+        "hash": "1386140985451125376"
+      },
+      {
+        "file": ".yarn/sdks/typescript/lib/typescript.js",
+        "hash": "2824640601725886217"
+      },
+      {
+        "file": ".yarn/sdks/eslint/lib/api.js",
+        "hash": "11935524110648288742"
+      },
+      {
+        "file": ".yarn/sdks/integrations.yml",
+        "hash": "5703335058684100671"
+      },
+      {
+        "file": ".yarn/sdks/typescript/bin/tsserver",
+        "hash": "6819096246728401411"
       }
     ],
     "projectFileMap": {
+      "@fastcampus/esbuild-config": [
+        {
+          "file": "packages/esbuild-config/README.md",
+          "hash": "6886952344311067916"
+        },
+        {
+          "file": "packages/esbuild-config/index.js",
+          "hash": "219371835848018192"
+        },
+        {
+          "file": "packages/esbuild-config/package.json",
+          "hash": "18027545320667172619",
+          "deps": [
+            "npm:esbuild@0.16.17"
+          ]
+        }
+      ],
       "@fastcampus/themes": [
         {
           "file": "packages/themes/build.js",
-          "hash": "15902243468172360167"
+          "hash": "15046383560236063815"
         },
         {
           "file": "packages/themes/package.json",
-          "hash": "4260988406821238534",
+          "hash": "17715314995251530132",
           "deps": [
-            "npm:esbuild@0.16.17",
-            "npm:typescript@5.8.3"
+            "@fastcampus/esbuild-config",
+            "npm:typescript"
           ]
         },
         {
@@ -95,7 +196,7 @@
         },
         {
           "file": "packages/themes/tsconfig.json",
-          "hash": "1179432164812416385"
+          "hash": "10248009443664204963"
         }
       ]
     }

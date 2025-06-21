@@ -1,4 +1,150 @@
 {
+  "packages/esbuild-config": {
+    "root": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "name": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "projectType": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.1": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.executor": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.options.script": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.scriptContent": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.metadata.runCommand": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "packages/esbuild-config/package.json",
+      "nx/core/package-json"
+    ],
+    "targets.build.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.build.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.dependsOn": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.inputs": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.cache": [
+      "nx.json",
+      "nx/target-defaults"
+    ],
+    "targets.test.parallelism": [
+      "nx.json",
+      "nx/target-defaults"
+    ]
+  },
   "packages/themes": {
     "root": [
       "packages/themes/package.json",
