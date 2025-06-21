@@ -1,0 +1,19 @@
+{
+  "name": "@fastcampus/storybook",
+  "packageManager": "yarn@4.9.2",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.1",
+    "@fastcampus/react-components-layout": "workspace:^",
+    "@fastcampus/themes": "workspace:^",
+    "@storybook/addon-docs": "^9.0.12",
+    "@storybook/addon-onboarding": "^9.0.12",
+    "@storybook/react-vite": "^9.0.12",
+    "prop-types": "^15.8.1",
+    "storybook": "^9.0.12",
+    "vite": "^6.3.5"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}
