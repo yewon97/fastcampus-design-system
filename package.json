@@ -1,7 +1,17 @@
 {
   "name": "fastcampus-design-system",
   "version": "0.0.0",
+  "workspaces": [
+    "packages/**/*",
+    "services/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "nx build",
+    "graph": "nx run-many --target=build --graph"
+  },
+  "packageManager": "yarn@4.9.2",
+  "devDependencies": {
+    "nx": "^21.2.1",
+    "typescript": "^5.2.2"
   }
 }

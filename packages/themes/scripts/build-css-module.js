@@ -87,43 +87,42 @@ const generateThemeCssVariables = () => {
 //   line-height: 100%;
 // }
 
-// const generateThemeCssClasses = () => {
-//   const cssString = [];
+const generateThemeCssClasses = () => {
+  const cssString = [];
 
-//   Object.entries(theme.classes).forEach(([, value]) => {
-//     const cssClasses = Object.entries(value)
-//       .map(([mainKey, mainValue]) =>
-//         Object.entries(mainValue)
-//           .map(([subKey, subValue]) => {
-//             const className = `.${toCssCasting(mainKey)}${toCssCasting(
-//               subKey,
-//             )}`;
+  Object.entries(theme.classes).forEach(([, value]) => {
+    const cssClasses = Object.entries(value)
+      .map(([mainKey, mainValue]) =>
+        Object.entries(mainValue)
+          .map(([subKey, subValue]) => {
+            const className = `.${toCssCasting(mainKey)}${toCssCasting(
+              subKey,
+            )}`;
 
-//             const styleProperties = Object.entries(subValue)
-//               .map(
-//                 ([styleKey, styleValue]) =>
-//                   `${toCssCasting(styleKey)}: ${styleValue};`,
-//               )
-//               .join("\n");
+            const styleProperties = Object.entries(subValue)
+              .map(
+                ([styleKey, styleValue]) =>
+                  `${toCssCasting(styleKey)}: ${styleValue};`,
+              )
+              .join("\n");
 
-//             return `${className} {\n${styleProperties}\n}`;
-//           })
-//           .join("\n"),
-//       )
-//       .join("\n");
+            return `${className} {\n${styleProperties}\n}`;
+          })
+          .join("\n"),
+      )
+      .join("\n");
 
-//     cssString.push(cssClasses);
-//   });
+    cssString.push(cssClasses);
+  });
 
-//   return cssString;
-// };
+  return cssString;
+};
 
 const generateThemeCss = () => {
   const variables = generateThemeCssVariables();
-  // const classes = generateThemeCssClasses();
+  const classes = generateThemeCssClasses();
 
-  // fs.writeFileSync("dist/themes.css", [...variables, ...classes].join("\n"));
-  fs.writeFileSync("dist/themes.css", [...variables].join("\n"));
+  fs.writeFileSync("dist/themes.css", [...variables, ...classes].join("\n"));
 };
 
 generateThemeCss();
