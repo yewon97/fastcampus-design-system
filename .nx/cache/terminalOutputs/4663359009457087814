@@ -1,0 +1,3 @@
+> nx run @fastcampus/esbuild-config:build
+
+TaDa!

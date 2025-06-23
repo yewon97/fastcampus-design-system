@@ -1,9 +1,43 @@
 {
   "run": {
-    "command": "nx run-many --target=dev --projects=@fastcampus/react-components-*",
-    "startTime": "2025-06-22T13:46:15.208Z",
-    "endTime": "2025-06-22T15:13:51.586Z",
+    "command": "nx build @fastcampus/react-components-layout",
+    "startTime": "2025-06-23T16:04:13.715Z",
+    "endTime": "2025-06-23T16:04:25.874Z",
     "inner": false
   },
-  "tasks": []
+  "tasks": [
+    {
+      "taskId": "@fastcampus/esbuild-config:build",
+      "target": "build",
+      "projectName": "@fastcampus/esbuild-config",
+      "hash": "4663359009457087814",
+      "startTime": "2025-06-23T16:04:13.947Z",
+      "endTime": "2025-06-23T16:04:15.204Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@fastcampus/themes:build",
+      "target": "build",
+      "projectName": "@fastcampus/themes",
+      "hash": "3402404998064870165",
+      "startTime": "2025-06-23T16:04:15.207Z",
+      "endTime": "2025-06-23T16:04:19.588Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "@fastcampus/react-components-layout:build",
+      "target": "build",
+      "projectName": "@fastcampus/react-components-layout",
+      "hash": "14014636311313209310",
+      "startTime": "2025-06-23T16:04:19.596Z",
+      "endTime": "2025-06-23T16:04:25.865Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
 }

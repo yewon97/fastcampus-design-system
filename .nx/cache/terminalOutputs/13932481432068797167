@@ -1,0 +1,12 @@
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNo matching export in "src/typography/style.css.ts" for import "TextStyle"[0m
+
+    src/typography/Text.tsx:7:9:
+[37m      7 │ import { [32mTextStyle[37m } from "./style.css";
+        ╵          [32m~~~~~~~~~[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNo matching export in "src/typography/style.css.ts" for import "TextStyle"[0m
+
+    src/typography/Text.tsx:7:9:
+[37m      7 │ import { [32mTextStyle[37m } from "./style.css";
+        ╵          [32m~~~~~~~~~[0m
+
