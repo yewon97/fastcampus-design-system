@@ -1,0 +1,72 @@
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected end of file in JSON[0m
+
+    package.json:1:0:
+[37m      1 │ [32m[37m
+        ╵ [32m^[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected end of file in JSON[0m
+
+    package.json:1:0:
+[37m      1 │ [32m[37m
+        ╵ [32m^[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected end of file in JSON[0m
+
+    package.json:1:0:
+[37m      1 │ [32m[37m
+        ╵ [32m^[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected end of file in JSON[0m
+
+    package.json:1:0:
+[37m      1 │ [32m[37m
+        ╵ [32m^[0m
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1m[35m[plugin vanilla-extract][0m [1mBuild failed with 1 error:
+package.json:1:0: ERROR: Unexpected end of file in JSON[0m
+
+    src/typography/Text.tsx:4:42:
+[37m      4 │ import { BaseStyle, StyleSprinkles } from [32m"../core/style.css"[37m;
+        ╵                                           [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  This error came from the "onLoad" callback registered here:
+
+    ../../../../.yarn/__virtual__/@vanilla-extract-esbuild-plugin-virtual-b98a65f4c3/4/.yarn/berry/cache/@vanilla-extract-esbuild-plugin-npm-2.3.18-bb43e8f094-10c0.zip/node_modules/@vanilla-extract/esbuild-plugin/dist/vanilla-extract-esbuild-plugin.cjs.dev.js:55:12:
+[37m      55 │       build.[32monLoad[37m({
+         ╵             [32m~~~~~~[0m
+
+    at setup (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/@vanilla-extract-esbuild-plugin-virtual-b98a65f4c3/4/.yarn/berry/cache/@vanilla-extract-esbuild-plugin-npm-2.3.18-bb43e8f094-10c0.zip/node_modules/@vanilla-extract/esbuild-plugin/dist/vanilla-extract-esbuild-plugin.cjs.dev.js:55:13)
+    at handlePlugins (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:1287:21)
+    at buildOrServeImpl (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:974:5)
+    at Object.buildOrServe (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:780:5)
+    at /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:2132:17
+    at new Promise (<anonymous>)
+    at Object.build (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:2131:14)
+    at build (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:1978:51)
+    at run (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/packages/esbuild-config/index.js:27:5)
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1m[35m[plugin vanilla-extract][0m [1mBuild failed with 1 error:
+package.json:1:0: ERROR: Unexpected end of file in JSON[0m
+
+    src/typography/Text.tsx:4:42:
+[37m      4 │ import { BaseStyle, StyleSprinkles } from [32m"../core/style.css"[37m;
+        ╵                                           [32m~~~~~~~~~~~~~~~~~~~[0m
+
+  This error came from the "onLoad" callback registered here:
+
+    ../../../../.yarn/__virtual__/@vanilla-extract-esbuild-plugin-virtual-b98a65f4c3/4/.yarn/berry/cache/@vanilla-extract-esbuild-plugin-npm-2.3.18-bb43e8f094-10c0.zip/node_modules/@vanilla-extract/esbuild-plugin/dist/vanilla-extract-esbuild-plugin.cjs.dev.js:55:12:
+[37m      55 │       build.[32monLoad[37m({
+         ╵             [32m~~~~~~[0m
+
+    at setup (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/@vanilla-extract-esbuild-plugin-virtual-b98a65f4c3/4/.yarn/berry/cache/@vanilla-extract-esbuild-plugin-npm-2.3.18-bb43e8f094-10c0.zip/node_modules/@vanilla-extract/esbuild-plugin/dist/vanilla-extract-esbuild-plugin.cjs.dev.js:55:13)
+    at handlePlugins (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:1287:21)
+    at buildOrServeImpl (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:974:5)
+    at Object.buildOrServe (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:780:5)
+    at /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:2132:17
+    at new Promise (<anonymous>)
+    at Object.build (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:2131:14)
+    at build (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.16.17-89fa4ab0dd/node_modules/esbuild/lib/main.js:1978:51)
+    at run (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/packages/esbuild-config/index.js:31:5)
+
+(node:8948) Warning: [Warning] The runtime detected new information in a PnP file; reloading the API instance (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.pnp.cjs)
+(Use `node --trace-warnings ...` to show where the warning was created)

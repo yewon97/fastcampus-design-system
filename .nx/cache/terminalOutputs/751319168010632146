@@ -1,0 +1,29 @@
+[1m@storybook/cli v7.6.20[22m[0m[0m
+[0m[0m
+[31mError: Your application tried to access storybook-addon-root-attributes, but it isn't declared in your dependencies; this makes the require call ambiguous and unsound.[39m
+[31m[39m
+[31mRequired package: storybook-addon-root-attributes (via "storybook-addon-root-attributes/package.json")[39m
+[31mRequired by: ./.storybook/[39m
+[31m[39m
+[31mRequire stack:[39m
+[31m- ./.storybook/main.js[39m
+    at require$$0.Module._resolveFilename (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.pnp.cjs:21570:13)
+    at Function.resolve (node:internal/modules/helpers:145:19)
+    at getAbsolutePath (file://./.storybook/main.js:11:26)
+    at file://./.storybook/main.js:24:5
+    at ModuleJobSync.runSync (node:internal/modules/esm/module_job:400:35)
+    at ModuleLoader.importSyncForRequire (node:internal/modules/esm/loader:427:47)
+    at loadESMFromCJS (node:internal/modules/cjs/loader:1565:24)
+    at Module._compile (node:internal/modules/cjs/loader:1716:5)
+    at Object..js (node:internal/modules/cjs/loader:1899:10)
+    at Module.load (node:internal/modules/cjs/loader:1469:32)
+
+WARN Broken build, fix the error above.
+WARN You may need to refresh the browser.
+
+
+[35m[1mattention[22m[39m => Storybook now collects completely anonymous telemetry regarding usage.
+This information is used to shape Storybook's roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[36mhttps://storybook.js.org/telemetry[39m
+

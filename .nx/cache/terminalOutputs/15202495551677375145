@@ -1,0 +1,61 @@
+[1mstorybook v9.0.12[22m[0m
+[0m
+You are currently using Storybook [1m9.0.12[22m but you have packages which are incompatible with it:
+
+- @storybook/components@8.6.14 which depends on ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+ Repo: https://github.com/storybookjs/storybook/tree/next/code/deprecated/components
+- @storybook/manager-api@8.6.14 which depends on ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
+ Repo: https://github.com/storybookjs/storybook/tree/next/code/lib/manager-api
+
+Please consider updating your packages or contacting the maintainers for compatibility details.
+
+For more on Storybook 9 compatibility, see the linked GitHub issue:
+https://github.com/storybookjs/storybook/issues/30944
+info => Serving static files from [36m/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/@chromatic-com-storybook-virtual-6c184e445e/4/.yarn/berry/cache/@chromatic-com-storybook-npm-4.0.1-1975f8c188-10c0.zip/node_modules/@chromatic-com/storybook/assets[39m at [36m/addon-visual-tests-assets[39m
+info => Starting manager..
+No story files found for the specified pattern: [34mstories/**/*.mdx[39m
+✘ [ERROR] storybook-addon-root-attributes tried to access @storybook/manager-api, but it isn't declared in its dependencies; this makes the require call ambiguous and unsound.
+
+Required package: @storybook/manager-api
+Required by: storybook-addon-root-attributes@virtual:d7f0d012c604bedfa714b8da682ec42cf825c9a55eb6cfdb9d51e15390772eaad65698794b38e04b0ce73bb8dec45ab54887a7d6af5b1728a4587174166b5c37#npm:2.1.3 (via /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/)
+ [plugin @yarnpkg/esbuild-plugin-pnp]
+
+    pnp:/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/manager.mjs:1:59:
+      1 │ ...types, useStorybookApi, useGlobals } from '@storybook/manager-api';
+        ╵                                              ~~~~~~~~~~~~~~~~~~~~~~~~
+
+✘ [ERROR] storybook-addon-root-attributes tried to access @storybook/components, but it isn't declared in its dependencies; this makes the require call ambiguous and unsound.
+
+Required package: @storybook/components
+Required by: storybook-addon-root-attributes@virtual:d7f0d012c604bedfa714b8da682ec42cf825c9a55eb6cfdb9d51e15390772eaad65698794b38e04b0ce73bb8dec45ab54887a7d6af5b1728a4587174166b5c37#npm:2.1.3 (via /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/)
+ [plugin @yarnpkg/esbuild-plugin-pnp]
+
+    pnp:/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/manager.mjs:2:97:
+      2 │ ... TooltipLinkList, IconButton, Icons } from '@storybook/components';
+        ╵                                               ~~~~~~~~~~~~~~~~~~~~~~~
+
+[38;2;241;97;97mError: Build failed with 2 errors:
+pnp:/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/manager.mjs:1:59: ERROR: [plugin: @yarnpkg/esbuild-plugin-pnp] storybook-addon-root-attributes tried to access @storybook/manager-api, but it isn't declared in its dependencies; this makes the require call ambiguous and unsound.
+
+Required package: @storybook/manager-api
+Required by: storybook-addon-root-attributes@virtual:d7f0d012c604bedfa714b8da682ec42cf825c9a55eb6cfdb9d51e15390772eaad65698794b38e04b0ce73bb8dec45ab54887a7d6af5b1728a4587174166b5c37#npm:2.1.3 (via /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/)
+
+pnp:/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/manager.mjs:2:97: ERROR: [plugin: @yarnpkg/esbuild-plugin-pnp] storybook-addon-root-attributes tried to access @storybook/components, but it isn't declared in its dependencies; this makes the require call ambiguous and unsound.
+
+Required package: @storybook/components
+Required by: storybook-addon-root-attributes@virtual:d7f0d012c604bedfa714b8da682ec42cf825c9a55eb6cfdb9d51e15390772eaad65698794b38e04b0ce73bb8dec45ab54887a7d6af5b1728a4587174166b5c37#npm:2.1.3 (via /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/__virtual__/storybook-addon-root-attributes-virtual-e8e51a9be0/4/.yarn/berry/cache/storybook-addon-root-attributes-npm-2.1.3-3f8dfbf52c-10c0.zip/node_modules/storybook-addon-root-attributes/dist/)
+[39m
+    at failureErrorWithLog (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:1463:15)
+    at /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:924:25
+    at runOnEndCallbacks (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:1303:45)
+    at buildResponseToResult (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:922:7)
+    at /Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:949:16
+    at responseCallbacks.<computed> (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:601:9)
+    at handleIncomingPacket (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:656:12)
+    at Socket.readFromStdout (/Users/jeon-yewon/project/fastcampus/fastcampus-design-system/.yarn/unplugged/esbuild-npm-0.25.5-0c57c3e219/node_modules/esbuild/lib/main.js:579:7)
+    at Socket.emit (node:events:507:28)
+    at addChunk (node:internal/streams/readable:559:12)
+Broken build, fix the error above.
+You may need to refresh the browser.
+
+
