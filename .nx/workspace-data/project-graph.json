@@ -1,5 +1,113 @@
 {
   "nodes": {
+    "@fastcampus/react-components-button": {
+      "name": "@fastcampus/react-components-button",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/components/button",
+        "name": "@fastcampus/react-components-button",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@fastcampus/react-components-button",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              },
+              "./style.css": "./dist/index.css"
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn run clean && yarn run build:js && yarn run build:type && yarn run build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "cache": true
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@fastcampus/react-components-layout": {
       "name": "@fastcampus/react-components-layout",
       "type": "lib",
@@ -4077,6 +4185,15 @@
         "version": "1.17.4",
         "packageName": "@vanilla-extract/css",
         "hash": "10c0/f241aef803db870e2b503ca1b8ed81976e839ab884e4c20594a352de7fe8c693920e05b17b4b4892d86d8c65126bec3184f003afc406505cb419b2b5569c11e1"
+      }
+    },
+    "npm:@vanilla-extract/dynamic@2.1.5": {
+      "type": "npm",
+      "name": "npm:@vanilla-extract/dynamic@2.1.5",
+      "data": {
+        "version": "2.1.5",
+        "packageName": "@vanilla-extract/dynamic",
+        "hash": "10c0/6b7f445918972579d8f988ccca54f3c9c0fdaf5f2bdff641e5e87eae3952e523acb3ac7243162317941d7cf71ba2383a2a4eeaa32eb5a1b661e098b27e02961d"
       }
     },
     "npm:@vanilla-extract/esbuild-plugin@2.3.18": {
@@ -11443,6 +11560,73 @@
     }
   },
   "dependencies": {
+    "@fastcampus/react-components-button": [
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "@fastcampus/themes",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:react@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "@fastcampus/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@types/react@18.3.23",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@types/react-dom@18.3.7",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@vanilla-extract/css@1.17.4",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@vanilla-extract/dynamic@2.1.5",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@vanilla-extract/esbuild-plugin@2.3.18",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@vanilla-extract/recipes@0.5.7",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:@vanilla-extract/sprinkles@1.6.5",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:react-dom@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      }
+    ],
     "@fastcampus/react-components-layout": [
       {
         "source": "@fastcampus/react-components-layout",
@@ -11513,6 +11697,11 @@
       }
     ],
     "@fastcampus/storybook": [
+      {
+        "source": "@fastcampus/storybook",
+        "target": "@fastcampus/react-components-button",
+        "type": "static"
+      },
       {
         "source": "@fastcampus/storybook",
         "target": "@fastcampus/react-components-layout",
@@ -17005,6 +17194,13 @@
       {
         "source": "npm:@vanilla-extract/css@1.17.4",
         "target": "npm:picocolors@1.1.1",
+        "type": "static"
+      }
+    ],
+    "npm:@vanilla-extract/dynamic@2.1.5": [
+      {
+        "source": "npm:@vanilla-extract/dynamic@2.1.5",
+        "target": "npm:@vanilla-extract/private@1.0.9",
         "type": "static"
       }
     ],
@@ -25498,5 +25694,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1750694724302
+  "computedAt": 1750864944322
 }
