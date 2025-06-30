@@ -11,8 +11,10 @@ import {
   spinnerStyle,
 } from "./style.css";
 import { vars } from "@fastcampus/themes";
+import { useButton } from "@fastcampus/react-hooks-button";
 
 const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
+  const { buttonProps } = useButton(props);
   const {
     variant = "solid",
     size = "md",
@@ -20,22 +22,9 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
     leftIcon,
     rightIcon,
     isLoading,
-    isDisabled,
     children,
     style,
-    onKeyDown,
   } = props;
-
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-    onKeyDown?.(e);
-
-    if (e.key === "Enter" || e.key === "13") {
-      e.preventDefault();
-      e.currentTarget.click();
-    }
-  };
-
-  const disabled = isDisabled || isLoading;
 
   const endableColor = vars.colors.$scale[color][500];
   const hoverColor =
@@ -49,20 +38,15 @@ const Button = (props: ButtonProps, ref: React.Ref<HTMLButtonElement>) => {
 
   return (
     <button
-      {...props}
+      {...buttonProps}
       // 기능 ^
       ref={ref}
-      role="button"
-      onKeyDown={handleKeyDown}
-      onClick={() => console.log("click")}
       className={clsx([
         buttonStyle({
           size,
           variant,
         }),
       ])}
-      data-loading={isLoading}
-      disabled={disabled}
       style={{
         ...assignInlineVars({
           [enableColorVariant]: endableColor,
