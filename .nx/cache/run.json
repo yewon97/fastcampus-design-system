@@ -1,8 +1,8 @@
 {
   "run": {
     "command": "nx run-many --target=dev --projects=@fastcampus/react-components-*",
-    "startTime": "2025-06-25T14:48:00.153Z",
-    "endTime": "2025-06-25T14:59:35.872Z",
+    "startTime": "2025-06-25T14:59:39.701Z",
+    "endTime": "2025-06-25T15:29:02.871Z",
     "inner": false
   },
   "tasks": []
