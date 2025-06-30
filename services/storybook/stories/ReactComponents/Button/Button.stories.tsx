@@ -22,7 +22,7 @@ export default {
       control: { type: "select" },
       options: Object.keys(vars.colors.$scale),
     },
-    disabled: {
+    isDisabled: {
       control: { type: "boolean" },
     },
     isLoading: {
@@ -37,14 +37,10 @@ export const ButtonStory = {
     variant: "outline",
     size: "md",
     color: "blue",
-    disabled: true,
+    isDisabled: true,
     isLoading: false,
   },
   render: (args) => (
-    <_Button
-      {...args}
-      leftIcon={<div>left</div>}
-      rightIcon={<div>right</div>}
-    />
+    <_Button {...args} leftIcon={<div>👍</div>} rightIcon={<div>👍</div>} />
   ),
 };
