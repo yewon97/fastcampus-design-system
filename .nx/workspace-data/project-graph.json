@@ -323,6 +323,113 @@
         "implicitDependencies": []
       }
     },
+    "@fastcampus/react-hooks-toggle": {
+      "name": "@fastcampus/react-hooks-toggle",
+      "type": "lib",
+      "data": {
+        "root": "packages/react/hooks/toggle",
+        "name": "@fastcampus/react-hooks-toggle",
+        "projectType": "library",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "build",
+              "build:js",
+              "build:type",
+              "clean",
+              "dev"
+            ]
+          },
+          "js": {
+            "packageName": "@fastcampus/react-hooks-toggle",
+            "packageExports": {
+              ".": {
+                "types": "./dist/index.d.ts",
+                "import": "./dist/index.js",
+                "require": "./dist/index.cjs"
+              }
+            },
+            "packageMain": "dist/index.js",
+            "isInPackageManagerWorkspaces": true
+          }
+        },
+        "targets": {
+          "build": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build"
+            },
+            "metadata": {
+              "scriptContent": "yarn run clean && yarn run build:js && yarn run build:type && yarn run build:css",
+              "runCommand": "yarn build"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "production",
+              "^production"
+            ],
+            "cache": true
+          },
+          "build:js": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:js"
+            },
+            "metadata": {
+              "scriptContent": "node build.js",
+              "runCommand": "yarn build:js"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "build:type": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "build:type"
+            },
+            "metadata": {
+              "scriptContent": "yarn tsc --emitDeclarationOnly",
+              "runCommand": "yarn build:type"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "clean": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "clean"
+            },
+            "metadata": {
+              "scriptContent": "rm -rf dist",
+              "runCommand": "yarn clean"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "dev"
+            },
+            "metadata": {
+              "scriptContent": "yarn build:js --watch && yarn build:type --watch",
+              "runCommand": "yarn dev"
+            },
+            "configurations": {},
+            "parallelism": true,
+            "cache": true
+          }
+        },
+        "implicitDependencies": []
+      }
+    },
     "@fastcampus/esbuild-config": {
       "name": "@fastcampus/esbuild-config",
       "type": "lib",
@@ -11685,6 +11792,11 @@
       },
       {
         "source": "@fastcampus/react-components-button",
+        "target": "@fastcampus/react-hooks-button",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-components-button",
         "target": "npm:@types/react@18.3.23",
         "type": "static"
       },
@@ -11799,12 +11911,79 @@
     "@fastcampus/react-hooks-button": [
       {
         "source": "@fastcampus/react-hooks-button",
+        "target": "npm:react@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
         "target": "@fastcampus/esbuild-config",
         "type": "static"
       },
       {
         "source": "@fastcampus/react-hooks-button",
+        "target": "npm:@types/react@18.3.23",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
+        "target": "npm:@types/react-dom@18.3.7",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
+        "target": "npm:react-dom@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
         "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
+        "target": "@fastcampus/react-hooks-toggle",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-button",
+        "target": "npm:clsx@2.1.1",
+        "type": "static"
+      }
+    ],
+    "@fastcampus/react-hooks-toggle": [
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:react@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "@fastcampus/esbuild-config",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:@types/react@18.3.23",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:@types/react-dom@18.3.7",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:react-dom@18.3.1",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:typescript",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/react-hooks-toggle",
+        "target": "npm:clsx@2.1.1",
         "type": "static"
       }
     ],
@@ -11899,6 +12078,11 @@
       {
         "source": "@fastcampus/storybook",
         "target": "npm:vite@6.3.5",
+        "type": "static"
+      },
+      {
+        "source": "@fastcampus/storybook",
+        "target": "@fastcampus/react-hooks-button",
         "type": "static"
       }
     ],
@@ -25813,5 +25997,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1751294857646
+  "computedAt": 1751899466084
 }

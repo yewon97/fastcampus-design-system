@@ -1897,6 +1897,23 @@ __metadata:
   resolution: "@fastcampus/react-hooks-button@workspace:packages/react/hooks/button"
   dependencies:
     "@fastcampus/esbuild-config": "workspace:^"
+    "@fastcampus/react-hooks-toggle": "workspace:^"
+    "@types/react": "npm:^18.2.21"
+    "@types/react-dom": "npm:^18.2.7"
+    clsx: "npm:^2.1.1"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.2.2"
+  peerDependencies:
+    react: "*"
+  languageName: unknown
+  linkType: soft
+
+"@fastcampus/react-hooks-toggle@workspace:^, @fastcampus/react-hooks-toggle@workspace:packages/react/hooks/toggle":
+  version: 0.0.0-use.local
+  resolution: "@fastcampus/react-hooks-toggle@workspace:packages/react/hooks/toggle"
+  dependencies:
+    "@fastcampus/esbuild-config": "workspace:^"
     "@types/react": "npm:^18.2.21"
     "@types/react-dom": "npm:^18.2.7"
     clsx: "npm:^2.1.1"
@@ -1914,6 +1931,7 @@ __metadata:
   dependencies:
     "@fastcampus/react-components-button": "workspace:^"
     "@fastcampus/react-components-layout": "workspace:^"
+    "@fastcampus/react-hooks-button": "workspace:^"
     "@fastcampus/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:7.6.20"
     "@storybook/addon-interactions": "npm:7.6.20"
